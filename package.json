@@ -1,0 +1,14 @@
+{
+  "name": "nodejspractice",
+  "version": "1.0.0",
+  "description": "Simple NodeJS web server with module integration",
+  "main": "module1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Hou",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
