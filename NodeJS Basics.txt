@@ -1,0 +1,38 @@
+node -v
+Returns version
+
+node basically runs javascript locally
+Takes chrome’s V8 engine and uses it on your computer rather than attaching it to an HTML document
+Creates a server 
+Javascript doesn’t have ‘document’ or ‘window’
+
+Node also built in npm
+packages are like libraries
+Super easy way to install common things
+
+-Share these dependencies:
+nam init
+Creates a package.json
+
+‘npm install’
+Will install all the modules
+
+nam install backbone -S
+Stores package (‘backbone’) in package json so all github users can use it
+
+
+
+var m2 = require(‘./module2’); //Assumes js file
+
+Need to export your data in module2 otherwise it just reads an empty object
+
+var http = require(‘http’);
+
+var server = http.createServer(function(request, response) {
+	//Every time server hears something at port 3000, will respond with this:
+	console.log(‘got a request!’); //Returns in the terminal
+	response.write(‘hi’); //Sends the window content
+	response.end();
+});
+
+server.listen(3000);
