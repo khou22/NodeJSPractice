@@ -29,7 +29,11 @@ console.log("Syllables", totalSyllables);
 console.log(" "); //Line break
 
 var readingEase = 206.835 - (1.015 * (totalWords/totalSentences)) - (84.6 * (totalSyllables/totalWords));
-var gradeLeve = (.39 * (totalWords/totalSentences)) + (11.8 * (totalSyllables/totalWords)) - 15.59;
+var fleschKincaid = (.39 * (totalWords/totalSentences)) + (11.8 * (totalSyllables/totalWords)) - 15.59;
+
+//Gunning-Fog method requires only about 100 words
+//Coleman-Liau method uses letters per 100 words and sentences per 100 words
+//SMOG only works with at least 30 sentences
 
 console.log("Reading ease key:")
 console.log("90.0–100.0  easily understood by an average 11-year-old student");
@@ -39,4 +43,4 @@ console.log("0.0–30.0  best understood by university graduates");
 console.log(" "); //Line break
 
 console.log("Reading ease:", readingEase);
-console.log("Grade level:", gradeLeve);
+console.log("Grade level:", fleschKincaid);
