@@ -9,6 +9,7 @@
   "author": "Kevin Hou",
   "license": "ISC",
   "dependencies": {
+    "syllable": "^0.1.4",
     "underscore": "^1.8.3"
   }
 }
