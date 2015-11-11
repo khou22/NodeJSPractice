@@ -33,7 +33,10 @@ var fleschKincaid = (.39 * (totalWords/totalSentences)) + (11.8 * (totalSyllable
 
 //Gunning-Fog method requires only about 100 words
 //Coleman-Liau method uses letters per 100 words and sentences per 100 words
+
 //SMOG only works with at least 30 sentences
+var numPolysyllables = 0; //What is a polysyllable?
+var smogIndex = (1.043 * Math.sqrt((numPolysyllables * 30)/totalSentences)) + 3.1291;
 
 console.log("Reading ease key:")
 console.log("90.0–100.0  easily understood by an average 11-year-old student");
