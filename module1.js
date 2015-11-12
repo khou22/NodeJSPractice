@@ -5,8 +5,18 @@ if (_ != undefined) {
   console.log("'underscore' module was imported successfully");
 }
 
+/*Local Syllable Function*/
+function new_count(word) {
+  word = word.toLowerCase();                                     //word.downcase!
+  if(word.length <= 3) { return 1; }                             //return 1 if word.length <= 3
+  word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');   //word.sub!(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '')
+  word = word.replace(/^y/, '');                                 //word.sub!(/^y/, '')
+  return word.match(/[aeiouy]{1,2}/g).length;                    //word.scan(/[aeiouy]{1,2}/).size
+}
+
 console.log("Hello from module1");
 console.log("To check node version run: 'node -v'");
+
 
 var data = "Hello my name is Kevin. I am easy to read.";
 
