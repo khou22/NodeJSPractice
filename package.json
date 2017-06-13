@@ -1,13 +1,17 @@
 {
   "name": "nodejspractice",
   "version": "1.0.0",
-  "description": "Simple NodeJS web server with module integration",
+  "description": "A repository to test Node JS modules and general, larger scale JS techniques",
   "main": "module1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Hou",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khou22/NodeJSPractice"
+  },
+  "license": "MIT",
   "dependencies": {
     "syllable": "^0.1.4",
     "underscore": "^1.8.3"
