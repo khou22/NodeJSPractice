@@ -4,6 +4,7 @@
   "description": "A repository to test Node JS modules and general, larger scale JS techniques",
   "main": "module1.js",
   "scripts": {
+    "reduxWebpack": "cd Redux && webpack-dev-server --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Hou",
@@ -17,7 +18,8 @@
     "http": "0.0.0",
     "style-loader": "^0.18.2",
     "syllable": "^0.1.4",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "webpack-dev-server": "^2.4.5"
   },
   "devDependencies": {
     "webpack": "^2.6.1"
