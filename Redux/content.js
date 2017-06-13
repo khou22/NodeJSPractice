@@ -1,1 +1,11 @@
-module.exports = "It works from content.js and live reloads.";
+import React from "react";
+
+export default React.createClass({
+  render: function() {
+    return (
+      <div className="greeting">
+        Hello, {this.props.name}!
+      </div>
+    );
+  },
+});
