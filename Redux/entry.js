@@ -6,5 +6,5 @@ import Counter from "./content";
 
 ReactDom.render(
   <Counter name="Kevin"/>,
-  document.body
+  document.getElementById('main')
 )
