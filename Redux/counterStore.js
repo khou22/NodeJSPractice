@@ -1,4 +1,4 @@
-import { createStore } from "redux";
+import { createStore } from "redux"; // Get the createStore export
 
 // Setup the Redux instance
 const counter = (state = 0, action) => { // Initially at 0
