@@ -20,6 +20,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.0.15",
     "css-loader": "^0.28.4",
+    "exif": "^0.6.0",
     "http": "0.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
